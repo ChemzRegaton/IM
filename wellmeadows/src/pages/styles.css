@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300;700;900&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Exo 2", sans-serif;
+    background: rgb(63, 161, 251);
+    background: linear-gradient(
+      142deg,
+      rgba(63, 161, 251, 1) 0%,
+      rgba(252, 70, 168, 1) 100%
+    );
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #5cd4f1;
+    color: rgb(0, 0, 0);
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+    z-index: 1000;
+}
+
+.nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+.nav a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.dashboard {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.title {
+    background-image: url('../images/image_1.png');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    
+}
+
+.bg {
+    background-color: #5cd4f1;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: -5rem;
+}
+
+.login-form,
+.signup-form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    margin-left: 20rem;
+    margin-right: -20rem;
+}
+
+.login-form h2,
+.signup-form h2 {
+    margin-bottom: 1rem;
+}
+
+.login-form input,
+.signup-form input {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.login-form button,
+.signup-form button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #5cd4f1;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 4px;
+}
+
+.login-form button:hover,
+.signup-form button:hover {
+    background-color: #4ab3c6;
+}
+
+.signup-link {
+    margin-top: 1rem;
+    font-size: 0.875rem;
+}
+
+.signup-link a {
+    color: #5cd4f1;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+.login-container {
+    background-image: url('../images/image_1.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.signup-container {
+    background-image: url('../images/image_1.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.common-container {
+    background-color: rgba(255, 253, 253, 0.5);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 90%;
+    width: 100%;
+    margin: 2rem;
+}
+
+.header {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 4rem);
+}
+
+.title-wrapper {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    transform: skew(0, -10deg);
+}
+
+.top-title {
+    order: 1;
+    text-align: center;
+    display: block;
+    color: #fff;
+    font-size: clamp(1rem, 4vw, 1.5rem);
+    margin-bottom: 1rem;
+    padding-right: 2rem;
+}
+
+.bottom-title {
+    order: 3;
+    text-align: center;
+    display: block;
+    color: #fff;
+    font-size: clamp(1rem, 4vw, 2rem);
+    margin-top: -10rem;
+    padding-left: 2rem;
+}
+
+.sweet-title {
+    order: 2;
+    color: #fde9ff;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: clamp(3rem, 10vw, 13rem);
+    line-height: 0.75em;
+    text-align: center;
+    text-shadow: 3px 1px 1px #4af7ff, 2px 2px 1px #165bfb, 4px 2px 1px #4af7ff,
+        3px 3px 1px #165bfb, 5px 3px 1px #4af7ff, 4px 4px 1px #165bfb,
+        6px 4px 1px #4af7ff, 5px 5px 1px #165bfb, 7px 5px 1px #4af7ff,
+        6px 6px 1px #165bfb, 8px 6px 1px #4af7ff, 7px 7px 1px #165bfb,
+        9px 7px 1px #4af7ff;
+
+    span {
+        display: block;
+        position: relative;
+
+        &:before {
+            content: attr(data-text);
+            position: absolute;
+            text-shadow: 2px 2px 1px #e94aa1, -1px -1px 1px #c736f9,
+                -2px 2px 1px #e94aa1, 1px -1px 1px #f736f9;
+            z-index: 1;
+        }
+
+        &:nth-child(1) {
+            padding-right: 2.25rem;
+        }
+
+        &:nth-child(2) {
+            padding-left: 2.25rem;
+        }
+    }
+}
+
+.search {
+    border-radius: 10px;
+    height: 3rem;
+    width: 20rem;
+}
+
+.actions {
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+}
+
+.actions button {
+    width: 20%;
+    padding: 0.75rem;
+    background-color: #5cd4f1;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 4px;
+}
+
+.actions button:hover {
+    background-color: #4ab3c6;
+}
+
+.table {
+    background-color: rgba(81, 196, 250, 0.653);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: inherit;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.patients-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background-color: rgba(29, 240, 255, 0.605);
+}
+
+.patients-table th,
+.patients-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.patients-table th {
+    background-color: #f2f2f2;
+}
+
+.staff-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background-color: rgba(29, 240, 255, 0.605);
+}
+
+.staff-table th,
+.staff-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.staff-table th {
+    background-color: #f2f2f2;
+}
+
+.staff-table td {
+    background-color: #7d373700;
+}
+
+.table-container {
+    max-height: 450px; /* Adjust height as needed */
+    overflow-y: auto;
+    overflow-x: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.staff-table,
+.patients-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.staff-table th,
+.staff-table td,
+.patients-table th,
+.patients-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.staff-table th,
+.patients-table th {
+    background-color: #f2f2f2;
+}
+
+.ward-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(29, 240, 255, 0.605);
+}
+
+.ward-table th,
+.ward-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.ward-table th {
+    background-color: #f2f2f2;
+}
